@@ -1,0 +1,110 @@
+/* Header Box & Navigation */
+/* The logo, title and nav are all contained within the header. There are 2 containers, the .title-box & nav. */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(35, 50, 55, 1) 0%,
+    rgba(59, 85, 93, 1) 100%
+  );
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(172, 131, 27);
+}
+.title-box {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.logo {
+  height: 100%;
+}
+h1,
+h2,
+nav {
+  color: aliceblue;
+}
+nav {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding-right: 5%;
+  font-size: 1.2em;
+}
+nav li:hover {
+  color: rgb(185, 146, 46);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+}
+/* Cover Photo Area */
+.cover-photo {
+  background-image: url(photos/coffeeTable.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+}
+.cover-photo h2 {
+  margin: 10%;
+}
+
+/* Introduction */
+.introduction {
+  display: flex;
+  padding: 50px;
+  text-align: center;
+  font-size: 18px;
+  border-top: 1px solid rgb(172, 131, 27);
+  background-color: rgba(61, 68, 70, 0.147);
+}
+.introduction p {
+  margin: 0 20%;
+}
+
+/* Gallery */
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(61, 68, 70, 0.147);
+}
+.gallery img {
+  width: 400px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  nav {
+    font-size: 15px;
+    margin: 2%;
+  }
+  .introduction p {
+    margin: 0 0;
+  }
+  .gallery img {
+    width: 300px;
+  }
+}
